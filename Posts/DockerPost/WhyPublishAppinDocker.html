@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo: Por que Publicar Aplicações em Docker?</title>
+    <meta name="description" content="Resumo dos benefícios de usar Docker para publicar aplicações.">
+    <link rel="stylesheet" href="../../css/styles.css"> 
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Resumo: Por que Publicar Aplicações em Docker?</h1>
+        </header>
+
+        <section>
+            <p>Docker? Você sabe o que é? Sabe para que serve? Antes de explorarmos os motivos para usar Docker na publicação de aplicações, é importante entender a sua essência.</p>
+            <p>Docker é uma plataforma que permite a criação e gestão de contêineres, que são unidades leves e portáteis que encapsulam uma aplicação e todas as suas dependências. Isso garante que a aplicação funcione de forma consistente em qualquer ambiente, seja local, em um servidor de produção ou na nuvem.</p>
+            <p>Agora, vamos descobrir os benefícios de publicar aplicações em Docker:</p>
+            <ul>
+                <li>Isolamento</li>
+                <li>Portabilidade</li>
+                <li>Facilidade de escalabilidade</li>
+            </ul>
+        </section>
+
+        <section id="isolation">
+            <h2>Isolamento de Ambiente</h2>
+            <div class="flex-container">
+                <div class="text-container">
+                    <p>Cada contêiner Docker roda sua própria aplicação, com todas as suas dependências e configurações encapsuladas. Isso significa que não há conflitos entre diferentes versões de bibliotecas ou serviços no mesmo servidor. Essa capacidade de isolar ambientes é especialmente útil em cenários de desenvolvimento, onde diferentes equipes podem precisar de diferentes versões de software.</p>
+                    <br>
+                    <br>
+                    <p><strong>Exemplo:</strong> Se você tem duas versões de uma API, ambas podem rodar em contêineres separados sem causar interferências. Além disso, a segurança é aumentada, pois cada contêiner opera de forma independente, limitando o impacto de possíveis falhas de segurança.</p>
+                </div>
+                <div class="image-container">
+                    <img src=".//Image/Isolamento de Ambiente.png" alt="Isolamento de Ambiente">
+                </div>
+            </div>
+        </section>
+
+        <section id="portability">
+            <h2>Portabilidade</h2>
+            <div class="flex-container">
+                <div class="text-container">
+                    <p>Um dos principais benefícios do Docker é que, uma vez que a aplicação funciona em um contêiner, ela pode rodar em qualquer lugar. Seja em uma máquina local, em um servidor de produção ou na nuvem — o ambiente de execução será sempre o mesmo. Essa portabilidade reduz a complexidade na hora de mover aplicações entre ambientes, pois garante que todos os requisitos e dependências estão sempre incluídos no contêiner.</p>
+                    <br>
+                    <br>
+                    <p><strong>Exemplificação em Imagem:</strong> Uma aplicação empacotada como uma "caixa", sendo levada de uma máquina local para um servidor na nuvem. Essa característica é particularmente valiosa em ambientes de microserviços, onde múltiplos contêineres interagem entre si.</p>
+                </div>
+                <div class="image-container">
+                    <img src=".//Image/Portabilidade.png" alt="Portabilidade">
+                </div>
+            </div>
+        </section>
+
+        <section id="ease-of-deploy">
+            <h2>Facilidade de Deploy</h2>
+            <div class="flex-container">
+                <div class="text-container">
+                    <p>Usar Docker facilita o deploy de aplicações. Você apenas precisa construir e rodar um contêiner, permitindo automações mais simples em pipelines de CI/CD (integração e entrega contínua). Isso reduz o tempo gasto em configurações manuais e minimiza a chance de erro humano durante o processo de deploy.</p>
+                    <br>
+                    <br>
+                    <p><strong>Exemplificação em Imagem:</strong> Representar uma "fábrica automatizada", onde o código se transforma em uma aplicação rodando sem ajustes manuais. Essa agilidade é crucial em ambientes ágeis, onde as mudanças de código são frequentes e precisam ser implantadas rapidamente.</p>
+                </div>
+                <div class="image-container">
+                    <img src=".//Image/Facilidade_Deploy.png" alt="Facilidade de Deploy">
+                </div>
+            </div>
+        </section>
+
+        <section id="scalability">
+            <h2>Escalabilidade Simples</h2>
+            <div class="flex-container">
+                <div class="text-container">
+                    <p>Com Docker, escalar sua aplicação é simples. Para rodar várias instâncias da sua API, basta iniciar múltiplos contêineres da mesma imagem e distribuir a carga entre eles. Isso permite que as aplicações suportem picos de demanda sem comprometer o desempenho.</p>
+                    <br>
+                    <br>
+                    <p><strong>Exemplificação em Imagem:</strong> Vários contêineres idênticos rodando em paralelo para suportar uma carga maior de usuários. Esse processo de escalabilidade pode ser gerenciado automaticamente por orquestradores como Kubernetes, que distribuem a carga e garantem a alta disponibilidade.</p>
+                </div>
+                <div class="image-container">
+                    <img src=".//Image/Escalabilidade_Simples.png" alt="Escalabilidade Simples">
+                </div>
+            </div>
+        </section>
+
+        <section id="error-reduction">
+            <h2>Redução de Erros de Configuração</h2>
+            <div class="flex-container">
+                <div class="text-container">
+                    <p>Como o Docker encapsula todo o ambiente, a famosa frase "funciona na minha máquina" não se aplica. O ambiente é replicado idênticamente, seja no desenvolvimento ou na produção. Isso elimina as discrepâncias que frequentemente causam problemas durante o deploy.</p>
+                    <br>
+                    <br>
+                    <p><strong>Exemplificação em Imagem:</strong> Dois desenvolvedores, cada um com um laptop, rodando a mesma aplicação simultaneamente. Essa consistência permite que as equipes de desenvolvimento e operações colaborem de forma mais eficiente, pois ambos utilizam a mesma imagem gerada pelo Docker, garantindo que a aplicação funcione corretamente em qualquer ambiente.</p>
+                </div>
+                <div class="image-container">
+                    <img src=".//Image/Reducao_Erros.png" alt="Redução de Erros de Configuração">
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p><a href="https://github.com/rolfgutz">GitHub</a> / <a href="https://www.linkedin.com/in/rolf-gutz-a33261160/">LinkedIn</a></p>
+        </footer>
+    </div>
+</body>
+</html>

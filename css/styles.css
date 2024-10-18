@@ -83,3 +83,38 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+h1, h2 {
+    color: #333;
+}
+/* .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+} */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.text-container {
+    flex: 1;
+    padding: 10px;
+}
+.image-container {
+    flex: 0 0 30%; /* Fixed width for images */
+    display: flex;
+    justify-content: center;
+}
